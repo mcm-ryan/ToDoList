@@ -3,60 +3,59 @@ using ToDoList.Data.Models;
 
 namespace ToDoList.Data
 {
-public static class Data
-{
-    public static List<ToDoItem> ToDoItems => allToDoItems;
-    static List<ToDoItem> allToDoItems = new List<ToDoItem>()
+    public static class Data
     {
-        new ToDoItem()
+        public static List<ToDoItem> ToDoItems => allToDoItems;
+        static List<ToDoItem> allToDoItems = new List<ToDoItem>()
         {
-            Id=1,
-            Title="Vienna, Austria",
-            Notes="Vienna, is one the most beautiful cities in Austria and in Europe as well. Other than the Operas for which it is well known, Vienna also has many beautiful parks...",
-            DateCreated = new DateTime(2017,01,20),
-            DateCompleted = null
-        },
-        new ToDoItem()
-        {
-            Id=2,
-            Title="Carpinteria, CA, USA",
-            Notes="Carpinteria is a city located on the central coast of California, just south of Santa Barbara. It has many beautiful beaches as well as a popular Avocado Festival which takes place every year in October...",
-            DateCreated = new DateTime(2019,02,22),
-            DateCompleted = new DateTime(2019,01,30)
-        },
-        new ToDoItem()
-        {
-            Id=3,
-            Title="San Francisco, CA, USA",
-            Notes="San Francisco is a metropolitan area located on the west coast of the United States. Some popular tourist features include the Golden Gate Bridge, Chinatown, and Fisherman's Wharf. There are a variety of popular food options...",
-            DateCreated = new DateTime(2019,01,27),
-            DateCompleted = new DateTime(2019,01,30)
-        },
-        new ToDoItem()
-        {
-            Id=4,
-            Title="Tucson, AZ, USA",
-            Notes="Tucson is a southwestern city in Arizona that is home to the University of Arizona. It was recently Titled a world gastronomy city, and is well known for its desert landscape and various bike races...",
-            DateCreated = new DateTime(2019,01,20),
-            DateCompleted = null
-        },
-        new ToDoItem()
-        {
-            Id=5,
-            Title="Albuquerque, NM, USA",
-            Notes="Albuquerque is a city located in New Mexico that is famous for its balloon festivals, picturesque views and references to TV shows.",
-            DateCreated = new DateTime(2015,01,20),
-            DateCompleted = new DateTime(2015,01,30)
-        },
-        new ToDoItem()
-        {
-            Id=7,
-            Title="Munich, Germany",
-            Notes="Munich is an important city in Germany, located in the heart of Bavaria. It's famous for its traditional Oktoberfest annual festival, and many nice lakes and parks...",
-            DateCreated = new DateTime(2019,01,20),
-            DateCompleted = null
-        }
-    };
-
-}
+            new ToDoItem()
+            {
+                Id=1,
+                Title="Organize Garage",
+                Notes="Sort tools and discard old or broken items. Install new storage racks.",
+                DateCreated = new DateTime(2017,01,20),
+                DateCompleted = null
+            },
+            new ToDoItem()
+            {
+                Id=2,
+                Title="Submit Tax Returns",
+                Notes="Double-check deductions for 2018 and file electronically.",
+                DateCreated = new DateTime(2019,02,22),
+                DateCompleted = new DateTime(2019,01,30)
+            },
+            new ToDoItem()
+            {
+                Id=3,
+                Title="Plan Birthday Party",
+                Notes="Create guest list, book venue, and order decorations.",
+                DateCreated = new DateTime(2019,01,27),
+                DateCompleted = new DateTime(2019,01,30)
+            },
+            new ToDoItem()
+            {
+                Id=4,
+                Title="Fix Leaky Faucet",
+                Notes="Buy a new washer or cartridge and install it. Consider plumber if needed.",
+                DateCreated = new DateTime(2019,01,20),
+                DateCompleted = null
+            },
+            new ToDoItem()
+            {
+                Id=5,
+                Title="Read 'Clean Code'",
+                Notes="Finish chapters 1-5 by the end of the month. Take notes for discussion group.",
+                DateCreated = new DateTime(2015,01,20),
+                DateCompleted = new DateTime(2015,01,30)
+            },
+            new ToDoItem()
+            {
+                Id=6,
+                Title="Update Resume",
+                Notes="Add recent projects and certifications. Tailor for upcoming job application.",
+                DateCreated = new DateTime(2019,01,20),
+                DateCompleted = null
+            }
+        };
+    }
 }

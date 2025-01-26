@@ -7,6 +7,7 @@ namespace ToDoList.Data.Services
     {
         List<ToDoItem> GetAllToDoItems();
         ToDoItem GetToDoItemById(int id);
+        void AddToDoItem(ToDoItem toDo);
         void UpdateToDoItem(int id, ToDoItem toDo);
         void DeleteToDoItem(int id);
     }

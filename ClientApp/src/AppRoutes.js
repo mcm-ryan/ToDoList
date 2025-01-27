@@ -1,20 +1,12 @@
 import { Counter } from "./components/Counter";
 import { FetchData } from "./components/FetchData";
-import { Home } from "./components/Home";
+import { ToDoList } from "./components/ToDoList";
 
 const AppRoutes = [
   {
     index: true,
-    element: <Home />
+    element: <ToDoList />
   },
-  {
-    path: '/counter',
-    element: <Counter />
-  },
-  {
-    path: '/fetch-data',
-    element: <FetchData />
-  }
 ];
 
 export default AppRoutes;
